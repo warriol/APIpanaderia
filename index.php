@@ -1,7 +1,8 @@
 <?php
 
-echo 'MY_ENV_VAR: ' . getenv('MY_ENV_VAR') . "<br>";
-echo 'ANOTHER_VAR: ' . getenv('ANOTHER_VAR') . "<br>";
+$config = require "../.env";
+
+echo 'MY_ENV_VAR: ' . $config['DB_HOST'] . "<br>";
 
 
 phpinfo();
