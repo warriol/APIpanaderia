@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export REPO_PATH="/home/warriols/repositories/APIpanaderia"  # Cambia esto por la ruta de tu repositorio clonado
+    - export BACKEND_PATH="/home/warriols/backend.panaderia"  # Ruta del subdominio backend
+    - export FRONTEND_PATH="/home/warriols/frontend.panaderia"  # Ruta del subdominio frontend
+    - /bin/cp * $REPO_PATH
+    - /bin/cp -R backend $BACKEND_PATH
+    - /bin/cp -R frontend $FRONTEND_PATH
